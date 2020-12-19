@@ -1,0 +1,128 @@
+/* Global Style */
+:root {
+    --color-1: goldenrod;
+    --color-2: royalblue;
+    --color-3: purple;
+    --color-4: seagreen;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #eee;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* End Global Style */
+
+/* Header Style */
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #202020;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: cursive;
+    color: white;
+}
+
+.active a{
+    color: white !important;
+}
+
+nav li:nth-child(1).active{
+    background-color: var(--color-1);
+}
+
+nav li:nth-child(2).active{
+    background-color: var(--color-2);
+}
+
+nav li:nth-child(3).active{
+    background-color: var(--color-3);
+}
+
+nav li:nth-child(4).active{
+    background-color: var(--color-4);
+}
+
+/* End Header Style */
+
+
+/* Main Style */
+
+main{
+    width: 100%;
+}
+
+main section{
+    width: 100%;
+    height: 100vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main section h2{
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+}
+
+main section:nth-child(1){
+    background-color: var(--color-1);
+}
+
+main section:nth-child(2){
+    background-color: var(--color-2);
+}
+
+main section:nth-child(3){
+    background-color: var(--color-3);
+}
+
+main section:nth-child(4){
+    background-color: var(--color-4);
+}
+
+/* End Main Style */
